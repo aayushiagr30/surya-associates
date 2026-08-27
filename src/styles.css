@@ -475,6 +475,7 @@ blockquote {
   border-radius: 8px;
   border-left: 4px solid var(--rust);
   color: var(--muted);
+  font-weight: 600;
 }
 
 .registration h3 {
@@ -846,4 +847,78 @@ blockquote {
   .blog-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* === Added animations & transitions === */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.intro,
+.partners,
+.cta,
+.page-hero,
+.service-item,
+.partner-card,
+.deadline-card,
+.contact-card,
+.detail-block {
+  animation: fadeUp .8s ease both;
+}
+
+.section-heading,
+.cta-content {
+  animation: fadeIn 1s ease both;
+}
+
+.partner-card,
+.service-item,
+.detail-block,
+.deadline-card,
+.contact-card {
+  transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.partner-card:hover,
+.service-item:hover,
+.detail-block:hover,
+.deadline-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(58, 50, 42, .12);
+}
+
+.logo,
+.nav-links a,
+.button,
+.footer a {
+  transition: all .3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.03);
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255,255,255,.08) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  transition: transform 1.2s ease;
+}
+
+.cta:hover::before {
+  transform: translateX(100%);
 }
