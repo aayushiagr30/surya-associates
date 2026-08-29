@@ -653,9 +653,9 @@ blockquote {
     left: 0;
     right: 0;
     top: 72px;
-    background: var(--paper);
-    border-top: 1px solid var(--border);
-    box-shadow: 0 10px 25px rgba(58, 50, 42, .1);
+    background: #fbf9f6;
+    border-top: 1px solid rgba(181, 84, 46, .18);
+    box-shadow: 0 10px 24px rgba(58, 50, 42, .08);
     padding: 14px 20px 20px;
   }
 
@@ -669,6 +669,14 @@ blockquote {
     display: inline-block;
     width: fit-content;
     padding: 8px 10px 10px;
+    color: var(--teal);
+    border-bottom-color: transparent;
+  }
+
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: var(--rust);
+    border-bottom-color: var(--rust);
   }
 
   .intro-grid,

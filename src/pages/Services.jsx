@@ -65,11 +65,11 @@ export default function Services() {
           <div className="registration">
             <h2>Registration Details</h2>
             <div className="registration-grid">
-              <div><h3>CA S.P. Agarwal</h3><p>Membership No.: 042906</p></div>
-              <div><h3>CA Praveen Agarwal</h3><p>Membership No.: 047292</p></div>
+              <div><h3>CA S.P. Agarwal</h3><p>Membership Number: 042906</p></div>
+              <div><h3>CA Praveen Agarwal</h3><p>Membership Number: 047292</p></div>
             </div>
             <div className="registration-details">
-              Firm Registration no. with ICAI: 110710W<br />
+              Firm Registration No. with ICAI: 110710W<br />
               Unique code No. with RBI: 063374<br />
               C&AG Empanelment No.: BO0737<br />
               PAN: AARFS6853Q<br />

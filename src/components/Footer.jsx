@@ -14,15 +14,15 @@ const links = [
   ["Ministry of Corporate affairs", "http://www.mca.gov.in"],
   ["ICAI", "https://icai.org"],
   ["ICAI UDIN", "https://udin.icai.org"],
-  ["Income tax", "https://www.incometaxindiaefiling.gov.in/home"],
-  ["Tax Calculator", "https://www.incometaxindia.gov.in/Pages/tools/tax-calculator.aspx"],
+  ["Income tax", "https://www.incometax.gov.in/iec/foportal/"],
+  ["Tax Calculator", "https://www.incometaxindia.gov.in/tax-tools"],
   ["GST", "https://www.gst.gov.in/"],
   ["GST EWay Bill portal", "https://ewaybillgst.gov.in/"],
   ["Customs National Trade Portal", "https://www.icegate.gov.in/"],
   ["E-Tax payments", "https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp"],
   ["Income tax Reporting Portal", "https://report.insight.gov.in/reporting-webapp/portal/homePage"],
-  ["Employees Provident Fund", "https://www.epfindia.gov.in/site_en/index.php"],
-  ["ESIC", "https://www.esic.nic.in/"],
+  ["Employees Provident Fund", "https://unifiedportal-mem.epfindia.gov.in/memberinterface/"],
+  ["ESIC", "https://portal.esic.gov.in/EmployerPortal/ESICInsurancePortal/Portal_Loginnew.aspx"],
 ];
 
 export default function Footer() {
@@ -30,8 +30,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-grid">
         <div><h3>Surya Associates</h3><p>Chartered Accountants</p></div>
-        <div><h4>Important Toll free numbers of Govt Dept.</h4><div className="footer-links">{governmentNumbers.map(([name, number]) => <p key={name}>{name}: {number}</p>)}</div></div>
-        <div><h4>Important links</h4><div className="footer-links">{links.map(([name, url]) => <a key={name} href={url} target="_blank" rel="noreferrer">{name}: {url}</a>)}</div></div>
+        <div><h4>Important Toll free numbers of Govt Dept.</h4><div className="footer-links">{governmentNumbers.map(([name, number]) => <a key={name} href={`tel:${number.replace(/\s+/g, "")}`} target="_self">{name}: {number}</a>)}</div></div>
+        <div><h4>Important links</h4><div className="footer-links">{links.map(([name, url]) => <a key={name} href={url} target="_blank" rel="noreferrer">{name}</a>)}</div></div>
       </div>
       <div className="container footer-bottom">© 1989 Surya Associates. All Rights Reserved.</div>
     </footer>
