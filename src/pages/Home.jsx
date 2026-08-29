@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 import PartnerCard from "../components/PartnerCard";
 
 const deadlines = [
-  { what: "GSTR 1 for the months March to June 2020", when: "Ref Govt Notification" },
-  { what: "GSTR 3B for the months April to June 2020", when: "Ref Govt Notification" },
-  { what: "TDS payment for the month June’20", when: "7 Jul ’20" },
-  { what: "Annual return GST for F.Y. 2018-2019", when: "30 Sep ’20" },
-  { what: "GST audit for F.Y. 2018-2019", when: "30 Sep ’20" },
-  { what: "TDS returns for the quarter March’20", when: "31 Jul ’20" },
+  { what: "Advance Tax - 2nd Instalment for Tax Year 2026–27", when: "15 Sep 2026" },
+  { what: "TDS Payment for August 2026", when: "7 Sep 2026" },
+  { what: "GSTR-1 for August 2026", when: "11 Sep 2026" },
+  { what: "GSTR-3B for August 2026", when: "20 Sep 2026" },
 ];
 
 export default function Home() {

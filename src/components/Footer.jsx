@@ -33,7 +33,7 @@ export default function Footer() {
         <div><h4>Important Toll free numbers of Govt Dept.</h4><div className="footer-links">{governmentNumbers.map(([name, number]) => <p key={name}>{name}: {number}</p>)}</div></div>
         <div><h4>Important links</h4><div className="footer-links">{links.map(([name, url]) => <a key={name} href={url} target="_blank" rel="noreferrer">{name}: {url}</a>)}</div></div>
       </div>
-      <div className="container footer-bottom">© 2019 Surya Associates. All Rights Reserved.</div>
+      <div className="container footer-bottom">© 1989 Surya Associates. All Rights Reserved.</div>
     </footer>
   );
 }
