@@ -30,8 +30,8 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-grid">
         <div><h3>Surya Associates</h3><p>Chartered Accountants</p></div>
-        <div><h4>Important Toll free numbers of Govt Dept.</h4><div className="footer-links">{governmentNumbers.map(([name, number]) => <a key={name} href={`tel:${number.replace(/\s+/g, "")}`} target="_self">{name}: {number}</a>)}</div></div>
-        <div><h4>Important links</h4><div className="footer-links">{links.map(([name, url]) => <a key={name} href={url} target="_blank" rel="noreferrer">{name}</a>)}</div></div>
+        <div><h4>Toll-Free Assistance</h4><div className="footer-links">{governmentNumbers.map(([name, number]) => <a key={name} href={`tel:${number.replace(/\s+/g, "")}`} target="_self">{name}: {number}</a>)}</div></div>
+        <div><h4>Government Portals</h4><div className="footer-links">{links.map(([name, url]) => <a key={name} href={url} target="_blank" rel="noreferrer">{name}</a>)}</div></div>
       </div>
       <div className="container footer-bottom">© 1989 Surya Associates. All Rights Reserved.</div>
     </footer>
